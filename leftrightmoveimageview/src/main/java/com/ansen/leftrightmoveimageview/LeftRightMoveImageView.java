@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
@@ -43,7 +41,7 @@ public class LeftRightMoveImageView extends AppCompatImageView {
         TypedArray typedArray=context.obtainStyledAttributes(attrs, R.styleable.LeftRightMoveImageView);
 
         final TypedValue srcValue=new TypedValue();
-        typedArray.getValue(R.styleable.LeftRightMoveImageView_src,srcValue);
+        typedArray.getValue(R.styleable.LeftRightMoveImageView_imageSrc,srcValue);
         resourceId=srcValue.resourceId;
 
         setImageResource(srcValue.resourceId);

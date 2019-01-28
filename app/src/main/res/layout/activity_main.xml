@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="#aa99cc"
-            app:src="@mipmap/bg_login"
+            app:imageSrc="@mipmap/bg_login"
             app:animationDuration="10000"
             android:scaleType="centerCrop"/>
     </FrameLayout>
